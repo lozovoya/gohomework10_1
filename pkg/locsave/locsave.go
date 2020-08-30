@@ -18,7 +18,7 @@ type Currency struct {
 
 func SaveData(extract []byte) (storage []Currency, err error) {
 
-	var data *cbrf.Curses
+	var data *cbrf.CursesDTO
 	err = xml.Unmarshal(extract, &data)
 	if err != nil {
 		log.Println(err)

@@ -9,7 +9,7 @@ type Currency struct {
 	Value    float64 `xml:"Value"`
 }
 
-type Curses struct {
+type CursesDTO struct {
 	XMLName    string     `xml:"ValCurs"`
 	Currencies []Currency `xml:"Valute"`
 }
